@@ -15,11 +15,9 @@ for l in sys.stdin:
         if vendor_name == current_vendor:
             total_amount += transaction_amount
         else:
-            #print '%s\t%s' % (current_vendor, total_amount)
+            print '%s\t%s' % (current_vendor, total_amount)
             total_amount = transaction_amount
             current_vendor = vendor_name
-    except Exception as e:
-        print e
-        print l
+    except:
         pass
 print '%s\t%s' % (current_vendor, total_amount)
