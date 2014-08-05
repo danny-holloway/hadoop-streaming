@@ -1,4 +1,4 @@
-#cat input/purchase_card_transactions_csv.csv | python mapper.py | sort | python reducer.py
+#cat input/purchase_card_transactions_csv.csv | ./mapper.py | sort | ./reducer.py
 
 rm -rf ./output
 
